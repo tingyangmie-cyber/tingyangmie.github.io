@@ -206,7 +206,7 @@
 
   .projects-grid {
     max-width: 1100px; margin: 0 auto;
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
   }
 
   /* Featured card — spans 2 cols */
@@ -373,7 +373,6 @@
   /* ── RESPONSIVE ────────────────────────────────────────────── */
   @media (max-width: 960px) {
     .projects-grid { grid-template-columns: 1fr 1fr; }
-    .project-card.featured { grid-column: span 2; }
     .about-inner { grid-template-columns: 1fr; gap: 36px; }
     .setup-grid { grid-template-columns: 1fr; }
   }
@@ -543,6 +542,31 @@
         </p>
         <div class="card-meta">
           <div class="card-stat">📁 Python · PySpark · Delta Lake · Unity Catalog</div>
+          <div class="card-link">View project →</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- BOM Explosion -->
+    <a class="project-card reveal" href="bom-explosion.html">
+      <div class="card-header">
+        <div class="card-icon" style="background:#fefce8">🔗</div>
+        <div class="card-badges">
+          <span class="badge badge-blue">SQL</span>
+          <span class="badge badge-purple">Recursive CTE</span>
+          <span class="badge badge-green">PostgreSQL</span>
+          <span class="badge badge-amber">Supply Chain</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Multi-Level BOM Explosion</h3>
+        <p>
+          Recursive SQL solution to traverse and explode a manufacturing Bill of Materials hierarchy
+          layer by layer — from any top-level assembly down to raw materials, with cycle detection,
+          shared component handling, and interactive tree visualisation.
+        </p>
+        <div class="card-meta">
+          <div class="card-stat">📁 SQL · Recursive CTEs · PostgreSQL · Snowflake · Databricks</div>
           <div class="card-link">View project →</div>
         </div>
       </div>
